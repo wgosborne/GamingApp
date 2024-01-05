@@ -1,12 +1,32 @@
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 
 function App() {
-
   return (
-    <div>
-      <Button colorScheme='blue'>Button</Button>
-    </div>
-  )
+    <Grid
+      templateAreas={{
+        base: `"nav" "main"`, //phone size
+        lg: `"nav nav" "aside main"`, //desktop, wider than 1024px
+      }}
+    >
+      <GridItem area="nav" bg="coral">
+        Nav
+      </GridItem>
+      <Show above="lg">
+        <GridItem area="aside" bg="gold">
+          Aside
+        </GridItem>
+      </Show>
+      <GridItem area="main" bg="dodgerblue">
+        Main
+      </GridItem>
+    </Grid>
+  );
 }
 
-export default App
+export default App;
+
+//Shows
+//use for deciding on showing based on screen
+
+//Template Areas
+//determining layouts for different breakpoints
