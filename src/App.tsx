@@ -16,7 +16,7 @@ export interface GameQuery {
   searchText: string;
 }
 
-function App({}:GameQuery) {
+function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery); //not null because we will always have a query object even if contents are null
 
   return (
