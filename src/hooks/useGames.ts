@@ -22,7 +22,8 @@ const useGames = (gameQuery: GameQuery) =>
         params: { 
             genres: gameQuery.genre?.id, 
             platforms: gameQuery.platform?.id,
-            ordering: gameQuery.sortOrder
+            ordering: gameQuery.sortOrder,
+            search: gameQuery.searchText //this is adding it to the backend
         }}, 
         [gameQuery]); //anytime the object changes, it will refetch the data
 
