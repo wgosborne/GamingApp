@@ -4,4 +4,8 @@ Created during Mosh React Course. Trying on my own and using the videos as neede
 This one is actually cool asf
 
 Steps to Run:
-1)
+1) clone down project
+2) cd game-hum
+3) npm run dev
+
+Note: Some errors with the fetch, not sure if the API is still getting all the games, does have some and the filter on the side still works
