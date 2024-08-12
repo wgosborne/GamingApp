@@ -5,7 +5,7 @@ This one is actually cool asf
 
 Steps to Run:
 1) clone down project
-2) cd game-hum
+2) cd game-hub
 3) npm run dev
 
 Note: Some errors with the fetch, not sure if the API is still getting all the games, does have some and the filter on the side still works
